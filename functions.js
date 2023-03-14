@@ -14,3 +14,33 @@ function generateUniqueID (firstName, lastName) {
 }
 
 
+function addAccount(data) {
+    const fN = data[0];
+    const lN = data[1];
+    const emailAdd = data[2];
+    const age = data[3]; 
+    const uniqueId = generateUniqueID(fN, lN);
+    const info = fN + "," + lN + "," + emailAdd + "," + age + "," + uniqueId;
+    if(data.length == 4) {
+        if(data[0] && data[1] && data[2] == "") {
+            return false;
+        } else {
+            if(validator.isEmail(data[2]) == true) {
+                if(data[3]>= 18) {
+                    fs.appendFileSync('users.txt', info + "\n");
+                    return true;
+                } else {
+                    return false;
+                }
+            } else {
+                return false;
+            }
+        }
+    } else {
+        return false;
+    }
+}
+
+
+
+export {addAccount};
