@@ -1,0 +1,24 @@
+{
+  "name": "week3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "functions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/CMSC-100-UV7L/exercise-03-importing-exporting-and-npm-JeaAnne18.git"
+  },
+  "author": "Jea Anne Gadil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CMSC-100-UV7L/exercise-03-importing-exporting-and-npm-JeaAnne18/issues"
+  },
+  "homepage": "https://github.com/CMSC-100-UV7L/exercise-03-importing-exporting-and-npm-JeaAnne18#readme",
+  "dependencies": {
+    "uuid": "^9.0.0",
+    "validator": "^13.9.0"
+  },
+  "type": "module"
+}
